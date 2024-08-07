@@ -8,7 +8,9 @@ INSERT INTO aluno (primeiro_nome, ultimo_nome, data_nascimento) VALUES (
 	'Maria', 'Rosa', '1985-01-01'
 );
 
+
 INSERT INTO categoria (nome) VALUES ('Front-end'), ('Programação'), ('Bancos de dados'), ('Data Science');
+
 
 INSERT INTO curso (nome, categoria_id) VALUES
 	('HTML', 1),
@@ -26,8 +28,11 @@ INSERT INTO curso (nome, categoria_id) VALUES
 	('Machine Learning', 4),
 	('Power BI', 4);
 	
+
 INSERT INTO aluno_curso VALUES (1, 4), (1, 11), (2, 1), (2, 2), (3, 4), (3, 3), (4, 4), (4, 6), (4, 5);
 
+
 SELECT * FROM categoria;
+
 
 UPDATE categoria SET nome = 'Ciência de Dados' WHERE id = 4;
