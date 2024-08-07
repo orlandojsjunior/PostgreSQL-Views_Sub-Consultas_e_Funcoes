@@ -3,7 +3,8 @@ CREATE TABLE categoria (
     nome VARCHAR(255) NOT NULL
 );
 
-drop table aluno_curso, curso;
+
+drop table aluno_curso, curso
 	
 CREATE TABLE curso(
     id SERIAL PRIMARY KEY, 
