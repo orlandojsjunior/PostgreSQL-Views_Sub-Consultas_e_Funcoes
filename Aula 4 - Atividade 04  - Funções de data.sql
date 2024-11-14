@@ -43,7 +43,7 @@ SELECT (primeiro_nome || ultimo_nome) AS nome_completo,
     AGE(data_nascimento) AS idade
   FROM aluno; 
  
-SELECT data_nascimento FROM aluno;
+SELECT * FROM aluno;
 
 
 /*
@@ -71,5 +71,3 @@ Na documentação também encontramos alguns exemplos do que fazer, como extrair
 a hora e diversas outras informações de uma data ou intervalo. Enfim, existem inúmeras funções para trabalhar com data e hora no Postgres, 
 que vocês podem aprender olhando a documentação.
 */
-
-
