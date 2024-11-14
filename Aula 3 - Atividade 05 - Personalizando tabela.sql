@@ -36,7 +36,7 @@ SELECT categoria,
             JOIN curso ON curso.categoria_id = categoria.id
         GROUP BY categoria
     ) AS categoria_cursos
-  WHERE numero_cursos > 3;
+  WHERE numero_cursos >= 3;
 
 /*
 Executando, teremos apenas o retorno da categoria "Banco de dados". Não precisaríamos trazer nem o número de cursos, 
@@ -56,7 +56,7 @@ SELECT categoria.nome AS categoria,
 FROM categoria 
 JOIN curso ON curso.categoria_id = categoria.id 
 GROUP BY categoria 
-HAVING COUNT(curso.id) > 3;
+HAVING COUNT(curso.id) > 10;
 
 /*
 Esse código nos retorna o mesmo resultado. Todavia, em alguns casos pode ser necessário usar uma subquery, ou uma sub consulta, como tabela,
